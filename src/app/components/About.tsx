@@ -1,13 +1,17 @@
 import Image from 'next/image';
+import girl from '../../../public/girl.jpg';
 export default function About() {
+  // https://img.freepik.com/premium-photo/portrait-beautiful-girl-holding-laptop-her-hands-young-home-office-yellow-background-working-virtual-with-computer_432566-7776.jpg
     return (
       <section className="flex flex-col md:flex-row items-center gap-10 px-6 py-20 bg-[#FFE4C4] text-black">
-        <div className="w-48 h-48 md:self-stretch md:h-auto rounded-full overflow-hidden border-4 border-white bg-yellow-50">
-         <Image  src="https://img.freepik.com/premium-photo/portrait-beautiful-girl-holding-laptop-her-hands-young-home-office-yellow-background-working-virtual-with-computer_432566-7776.jpg"
+        <div className="relative w-48 h-48 md:self-stretch md:h-auto rounded-full overflow-hidden border-4 border-white bg-yellow-50">
+         <Image  src={girl}
             alt="Erica working"
-            className="w-full h-full object-cover"
+            fill
+            className="object-cover"
           />
-        
+      
+      
            
         </div>
         <div className="max-w-xl  p-6 rounded-lg shadow-xl">
